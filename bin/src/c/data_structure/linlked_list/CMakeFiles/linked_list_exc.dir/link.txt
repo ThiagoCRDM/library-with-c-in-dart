@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/linked_list_exc.dir/linked_list.c.o  -o linked_list_exc 

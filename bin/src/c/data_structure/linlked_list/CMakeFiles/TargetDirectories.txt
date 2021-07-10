@@ -1,0 +1,4 @@
+/home/thiago/Documents/Development/dart/dart_with_c/bin/src/c/data_structure/linlked_list/CMakeFiles/rebuild_cache.dir
+/home/thiago/Documents/Development/dart/dart_with_c/bin/src/c/data_structure/linlked_list/CMakeFiles/linked_list_exc.dir
+/home/thiago/Documents/Development/dart/dart_with_c/bin/src/c/data_structure/linlked_list/CMakeFiles/edit_cache.dir
+/home/thiago/Documents/Development/dart/dart_with_c/bin/src/c/data_structure/linlked_list/CMakeFiles/linked_list.dir

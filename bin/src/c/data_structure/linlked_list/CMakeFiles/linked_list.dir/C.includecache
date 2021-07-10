@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thiago/Documents/Development/dart/dart_with_c/bin/src/c/data_structure/linlked_list/linked_list.c
+stdlib.h
+-
+stdio.h
+-
+stdbool.h
+-
+linked_list.h
+/home/thiago/Documents/Development/dart/dart_with_c/bin/src/c/data_structure/linlked_list/linked_list.h
+
+/home/thiago/Documents/Development/dart/dart_with_c/bin/src/c/data_structure/linlked_list/linked_list.h
+

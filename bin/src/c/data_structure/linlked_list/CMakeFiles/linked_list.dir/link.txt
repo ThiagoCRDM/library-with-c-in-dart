@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,libdata_struct_linked_list.so.1 -o libdata_struct_linked_list.so.1.0.0 CMakeFiles/linked_list.dir/linked_list.c.o 
