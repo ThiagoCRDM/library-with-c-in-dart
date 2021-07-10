@@ -1,0 +1,4 @@
+/home/thiago/Documents/Development/dart/dart_with_c/bin/src/c/data_structure/queue/CMakeFiles/rebuild_cache.dir
+/home/thiago/Documents/Development/dart/dart_with_c/bin/src/c/data_structure/queue/CMakeFiles/edit_cache.dir
+/home/thiago/Documents/Development/dart/dart_with_c/bin/src/c/data_structure/queue/CMakeFiles/queue_exec.dir
+/home/thiago/Documents/Development/dart/dart_with_c/bin/src/c/data_structure/queue/CMakeFiles/queue.dir

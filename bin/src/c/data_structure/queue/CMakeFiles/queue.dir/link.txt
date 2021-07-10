@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,libdata_struct_queue.so.1 -o libdata_struct_queue.so.1.0.0 CMakeFiles/queue.dir/queue.c.o 
