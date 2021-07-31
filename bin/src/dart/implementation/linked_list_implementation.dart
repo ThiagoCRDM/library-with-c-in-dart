@@ -4,10 +4,10 @@ import 'dart:io' show Directory;
 import 'package:path/path.dart' as path;
 
 class Node extends Struct {
-  @Int64()
+  @Int32()
   external int data;
 
-  @Int64()
+  @Int32()
   external int key;
 
   external Pointer<Node> next;
@@ -72,8 +72,6 @@ void main() {
 
   final sort = dynamicLib.lookupFunction<SortFunc, Sort>('sort');
 
-  final reverse = dynamicLib.lookupFunction<ReverseFunc, Reverse>('reverse');
-
   insertFirst(1, 10);
   insertFirst(2, 20);
   insertFirst(3, 30);
@@ -83,14 +81,20 @@ void main() {
 
   printList();
 
-  while (isEmpty() == 1) {
-    var temp = deleteFirst();
-    print('Deleted value');
-    print('${temp.ref.data} ${temp.ref.key}');
+  print('');
+  print('Tamanho: ${length()}');
+  print('');
+  var itemFind = find(4).ref;
+  print('item: ${itemFind.data}');
+
+  print('');
+
+  while (isEmpty() != 1) {
+    var temp = deleteFirst().ref;
+    print('Deleted value: ${temp.data} ${temp.key}');
   }
 
-  print('List after deleting all items: ');
-  printList();
+  print('Tamanho: ${length()}');
 
   insertFirst(1, 10);
   insertFirst(2, 20);
@@ -98,28 +102,13 @@ void main() {
   insertFirst(4, 1);
   insertFirst(5, 40);
   insertFirst(6, 56);
-
-  print('Restored List: ');
-  printList();
-  print('');
 
   var foundLink = find(4);
 
   // ignore: unnecessary_null_comparison
-  if (foundLink.address != null) {
-    print('Element found: ');
-    print('${foundLink.ref.key.floor()},${foundLink.ref.data.floor()}');
-  } else {
-    print('Element not found.');
-  }
-
-  foundLink = find(4);
-
-// ignore: unnecessary_null_comparison
-  if (foundLink.address != null) {
-    print('Element found: ');
-    print('${foundLink.ref.key.floor()},${foundLink.ref.data.floor()}');
-    print('');
+  if (foundLink.address != 0) {
+    var item = foundLink.ref;
+    print('Element found: ${item.key},${item.data}');
   } else {
     print('Element not found.');
   }
@@ -127,7 +116,9 @@ void main() {
   sort();
 
   print('List after sorting the data: ');
+
+  printList();
   printList();
 
-  sort();
+  return;
 }

@@ -5,7 +5,7 @@ import 'package:path/path.dart' as path;
 
 typedef EnQueueFunc = Void Function(Int64 value);
 
-typedef EnQueue = void Function(int valeu);
+typedef EnQueue = void Function(int value);
 
 typedef DeQueueFunc = Void Function();
 
